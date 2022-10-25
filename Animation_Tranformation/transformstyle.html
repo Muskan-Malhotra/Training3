@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #div1{
+      position: static;
+      height: 200px;
+      width: 30px;
+      margin: 100px;
+      padding: 10px;
+      border: 1px;
+
+    }
+    #div2{
+      padding: 50px;
+      position: absolute; 
+      /* chnges form actual to the most relatable position */
+      border:1px;
+      /* background-color:aquamarine;
+      transform: rotate(25deg); */
+      background-color:pink;
+      transform: rotateY(60deg); 
+      /* transform-style: flat; */
+      transform-style:preserve-3d;
+      /* preseved object in 3D form */
+      transform-origin: 10% 80%;
+    }
+    #div3{
+      padding: 40px;
+      position: absolute;
+      border: 1px;
+      background-color: crimson;
+      transform: rotateY(-60deg);
+      /* transform-style: flat; */
+    }
+  </style>
+</head>
+<body>
+
+  <h1> The transformation Style Property</h1>
+  <div id="div1">outer object
+    <div id="div2">parent
+      <div id="div3">child</div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

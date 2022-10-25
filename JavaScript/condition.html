@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Condition
+  </title>
+  <style>
+    .result{
+      border:peru 1px solid;
+      background-color:beige;
+      text-align:left;
+      padding-left: 20px;
+      height: 250px;
+      width: 95%;
+
+    }
+    .resultText{
+      font-size: 20px;
+      font:normal;
+      color: brown;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="result">
+    <h2>If Statement</h2>
+    <h3>Declarations:</h3>
+    <p>var a = 15; var b = 20; var c = 30;</p>
+    <div class="resultText">
+      <p id="result1"></p>
+        <p id="result2"></p>
+          <p id="result3"></p>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var a=15,b=20,c=30;
+  if(a==15){
+    document.getElementById("result1").innerHTML="A is equal to 10";
+  }
+  if(b==50){
+    document.getElementById("result2").innerHTML="B is equal to 50";
+
+  }
+  if(c==30){
+    document.getElementById("result3").innerHTML="C is equal to 30";
+
+  }
+  </script>
+</body>
+</html>

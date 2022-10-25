@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    If-Else
+  </title>
+  <style>
+    .result{
+      border:blue 2px solid;
+      background-color:bisque;
+      text-align:left;
+      padding-left: 20px;
+      height: 250px;
+      width: 95%;
+
+    }
+    .resultText{
+      font-size: 20px;
+      font:normal;
+      color:red;
+      font-style: oblique;
+      font-weight: bolder;
+      font-size:xx-large;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="result">
+    <h2>
+      Print "GoodDay" if the number is odd; Else print "Good Morning" 
+    </h2>
+    <h3>The Numbers is: 25</h3>
+    <p></p>
+    <div class="resultText">
+      <p id="result1"></p>
+      <p id="result2"></p>
+         
+    </div>
+  </div>
+  <script type="text/javascript">
+  var a = 25;
+  
+  if(a%2==0){
+    document.getElementById("result1").innerHTML="Good Morning";
+  }
+  else{
+    document.getElementById("result2").innerHTML="GoodDay";
+  }
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    /* Popup container - can be anything you want */
+    .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    /* The actual popup */
+    .popup .popuptext {
+    visibility: hidden;
+    width: 162px;
+    background-color: #c000ff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 7px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -325%;
+    left: 43%;
+    margin-left: -80px;
+    }
+    /* Popup arrow */
+    .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    margin-left: 6px;
+    border-width: 5.5px;
+   
+    border-style: solid;
+border-color: #c000ff transparent transparent transparent;
+}
+/* Toggle this class - hide and show the popup */
+.popup .show {
+visibility: visible;
+animation-name: bounce;
+animation-duration: 4s;
+animation-iteration-count: 1;
+animation-direction: alternate;
+}
+/* Add animation (fade in the popup) */
+@keyframes bounce {
+from {
+left: 0px;
+}
+to {
+left: 198px;
+}
+}
+</style>
+</head>
+<body style="text-align:center">
+<h2>Pop up with bounce animation and the slider moves from left to right of the text and then settles at the center</h2>
+<div class="popup" onclick="myFunction()">Click here to view the Pop up!
+<span class="popuptext" id="popUpElement">Pop-up with a bounce animation</span>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+var popup = document.getElementById("popUpElement");
+popup.classList.toggle("show");
+}
+</script>
+</body>
+</html>
+   
+
+<html>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+ 
+if (name==null || name==""){  
+    alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }    
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>

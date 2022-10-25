@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML CSS Form</title>
+    <link rel="stylesheet" href="style.css">
+
+     
+  </head>
+  <body>
+    <div class="image">
+      <img src="https://c.tenor.com/l4Iitx2f6ZIAAAAi/borboletas-butterflies.gif"/>
+      <img src="https://c.tenor.com/l4Iitx2f6ZIAAAAi/borboletas-butterflies.gif"/>
+    </div>
+    <form name="myform" class="signup-form" action="register.html" onsubmit="return validate()" method= "">
+
+      <!-- form header -->
+      <div class="form-header">
+        <h1>🎋WELCOME! ABOARD🎋</h1>
+      </div>
+
+      <!-- form body -->
+      <div class="form-body">
+
+        <!-- Firstname and Lastname -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First name *</label>
+            <input type="text" name = "fname" id="firstname" class="form-input" placeholder="enter your first name" required="required"/>
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last name</label>
+            <input type="text" name = "lname" id="lastname" class="form-input" placeholder="enter your last name" />
+          </div>
+        </div>
+        <p><br><br></p>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email" class="label-title">Email *</label>
+          <input type="email" id="email" class="form-input" placeholder="enter your email">
+        </div>
+        <p></p>
+
+        <!-- Date From and To -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="Start_Date" class="label-title">Start Date *</label>
+            <input type="date" id="date" class="form-input" placeholder="dd/mm/yyyy" required="required">
+          </div>
+          <div class="form-group right">
+            <label for="End_Date" class="label-title">End Date *</label>
+            <input type="date" class="form-input" id="date" placeholder="dd/mm/yyyy" required="required">
+          </div>
+        </div>
+        <p><br><br><br></p>
+
+
+        <!-- Gender and Distance -->
+        <div class="horizontal-group">
+            <label class="label-title">Gender:</label>
+            <div class="input-group">
+              <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label>
+              <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+          </div>
+          <p></p>
+            <label class="label-title">Travel Mode :</label>
+            <div >
+              <label><input type="checkbox" >  Car </label>
+              <label><input type="checkbox">  Bus</label>
+              <label><input type="checkbox">  Train</label>
+              <label><input type="checkbox">  Airplane</label>
+          </div>
+        </div>
+        <br>
+
+        <!-- Travelling from -->
+        <div class="horizontal-group">
+            <label class="label-title">Travelling From</label>
+            <select class="form-input" id="level" >
+              <option>Delhi</option>
+              <option>Mumbai</option>
+              <option>Chennai</option>
+              <option>Banglore</option>
+              <option>Kolkata</option>
+              <option>Punjab</option>
+              <option>Jammu&Kashmir</option>
+            </select>
+          
+        </div>
+        <br>
+
+        <!-- Travelling to -->
+        <div class="horizontal-group">
+          <label class="label-title">Travelling To</label>
+          <select class="form-input" id="level" >
+            <option>Mumbai</option>
+            <option>Delhi</option>
+            <option>Chennai</option>
+            <option>Banglore</option>
+            <option>Kolkata</option>
+            <option>Punjab</option>
+            <option>Jammu&Kashmir</option>
+          </select>
+        
+      </div>
+      <br>
+
+        <!-- Age -->
+        <div class="horizontal-group">
+          <label for="experience" class="label-title">Mention Your Age:</label>
+          <input type="number"  min="18" max="80"  value="18" class="form-input">
+
+        </div>
+        <br>
+        <div class="horizontal-group">
+          <label for="experience" class="label-title">Number of Passengers Travelling:</label>
+          <input type="number" name = "age" min="1" max="20"  value="2" class="form-input">
+
+        </div>
+        
+      
+        <br>
+      <div class="submit_button">
+        <center><button type="submit" class="btn">Submit</button></center>
+      </div>
+
+    </form>
+
+    
+
+    <script>
+      function validate() {
+          var name =
+              document.forms.myform.fname.value;
+
+          var age =
+              document.forms.myform.age.value;                                          
+                                             
+          if (name == "" || !isNaN(name)) {
+              alert("Please enter your name properly.");
+              
+              return false;
+          }
+          if (age == 0 || age<0 || age>100 || isNaN(age)) {
+              alert("Please enter a valid age");
+              
+              return false;
+          }
+          
+          return true;
+      }
+
+      
+  </script>
+    
+
+  </body>
+</html>

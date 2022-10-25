@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG-Polygons</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">
+    <h1 align="center">Hollow Circle</h1>
+    <svg width="200" height="200">
+        <circle cx="100" cy="100" r="60" fill="none" stroke="Blue" ></circle>
+    </svg>
+
+    </div>
+    <div class="item1">
+    <h1 align="center">Circle</h1>
+    <svg width="200" height="200">
+        <circle cx="100" cy="100" r="60" fill="Green" stroke="black"></circle>
+    </svg>
+</div>
+
+<div class="item1">
+    <h1 align="center">Square</h1>
+    <svg id="svglem" width="200" height="200">
+      <rect width="150" height="150" fill="Blue" />
+    </svg>
+</div>
+
+<div class="item2">
+    <h1 align="center">Star</h1>
+    <svg height="200" width="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198" fill="Yellow">
+    </svg>
+    </div>
+    <div class="item2">
+     <h1 align="center">Triangle</h1>
+ 
+    <svg height="200" width="200" class="svg-triangle">
+        <polygon  points="10,10 110,10 20,110" fill="Orange">
+      </svg>
+      </div>
+    </div>
+</body>
+</html>
+
+              
+<style>
+  
+    .flex-container {
+  background-color: bisque;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      padding: 25px;
+     
+      gap: 5px;
+  
+    }
+  
+    .flex-container > div{
+      margin-left: 30px;
+      border: 3px solid #3e4a79;
+      border-radius: 5px;
+      padding: 8px;
+    }
+  
+  
+  
+  </style>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #div1{
+      position: static;
+      height: 200px;
+      width: 30px;
+      margin: 100px;
+      padding: 10px;
+      border: 1px;
+
+    }
+    #div2{
+      padding: 50px;
+      position: absolute; 
+      /* chnges form actual to the most relatable position */
+      border:1px;
+      background-color:yellowgreen;
+      transform: rotate(25deg);
+      transform-style: preserve-3d;
+      /* preseved object in 3D form */
+      transform-origin: 10% 80%;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <h1> The transformation Origin Properties</h1>
+
+  <div id="div1">
+    <div id="div2">
+      Welcome!!
+    </div>
+  </div>
+
+  
+</body>
+</html>

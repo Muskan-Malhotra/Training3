@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Javascript
+  </title>
+  <style>
+    .result{
+      border:blue 2px solid;
+      background-color:lightcoral;
+      text-align:left;
+      padding-left: 20px;
+      height: 250px;
+      width: 95%;
+
+    }
+    .resultText{
+      font-size: 20px;
+      font:normal;
+      color:white;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="result">
+    <h2>Check the Number: Positive or Negative</h2>
+    <h3>The Numbers are: a = 50 || b = -15 || c = -1</h3>
+    <p>var a = 50; var b = -15; var c = -1;</p>
+    <div class="resultText">
+      <p id="result1"></p>
+        <p id="result2"></p>
+          <p id="result3"></p>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var a = 50,b = -15,c = -1;
+  if(a>0){
+    document.getElementById("result1").innerHTML="A is positive";
+  }
+  if(b<0){
+    document.getElementById("result2").innerHTML="B is negative";
+
+  }
+  if(c>0){
+    document.getElementById("result3").innerHTML="C is positive";
+
+  }
+  </script>
+</body>
+</html>
